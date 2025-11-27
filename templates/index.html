@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Günün Sözü</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .kutu {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        p.soz {
+            font-size: 20px;
+            color: #555;
+            font-style: italic;
+            margin: 20px 0;
+        }
+        p.yazar {
+            font-size: 16px;
+            color: #888;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kutu">
+        <h1>🌟 Günün Sözü 🌟</h1>
+        
+        <p class="soz">"{{ gunun_sozu.soz }}"</p>
+        <p class="yazar">- {{ gunun_sozu.yazar }}</p>
+
+        <a href="/" class="btn">Yeni Söz Getir</a>
+    </div>
+
+</body>
+</html>
